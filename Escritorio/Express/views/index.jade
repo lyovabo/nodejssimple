@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	div.container
+		div.row
+			div.col-md-4.col-md-offset-4
+				div.panel.panel-primary
+					div.panel-heading
+						p enter your email
+					div.panel-body
+						form(method='get',action='/user')
+							div.input-group
+								span.input-group.addon @
+								input(type='text',placeholder='username')
+							input.btn.btn-primary.pull-right(type='submit',value='Login')

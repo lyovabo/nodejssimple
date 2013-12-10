@@ -1,0 +1,23 @@
+extends layout
+
+block content
+	div.container
+		div.well.well-sm
+			div.panel.panel-success
+				div.panel-heading To Do
+				div.panel-body
+					ul.nav.nav-stacked
+						span.badge.pull-right 2h
+						li
+							div Task2
+						span.badge.pull-right 3h
+						li
+							div Task3
+						div.text-success
+							span.glyphicon.glyphicon-pushpin Add new task
+						div.row
+							div.col-xs-8
+								input(type='text',placeholder='to do ')
+							div.col-xs-4
+								input(type='text',placeholder='to do ')
+
